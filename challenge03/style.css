@@ -1,39 +1,48 @@
-/* INSTRUCTIONS
- *
- * 1) Keep the text inside .intro-content
- *    in the same place, but have the background
- *    extend from one side of the viewport
- *    to the other, no matter how wide or narrow
- *    the browser is.
- *
- * 2) Limit the maximum width of the text in the
- *    bottom area.
- *
- * You may modify the HTML if needed
- * (you probably should for this challenge)
- *
- */
-
-* {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-body {
-  margin: 0;
-  font-family: sans-serif;
+.outer-container{
+    background-color: #23424A;
 }
-
-.container {
-  background: #23424a;
-  color: white;
+.main-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 60%;
+    height: 70vh;
+    /* margin-left:2em ; */
+    padding: 4em;
+    
+    font-family: 'Roboto',sans-serif;
 }
-.inner-content{
-  width: 80%;
-  margin: auto;
-  padding:1.2rem ;
+.main-container h1{
+    font-size: 3rem;
 }
-
-.intro-content {
-  width: 50%;
-  max-width: 600px;
+.main-container p{
+    font-size: 1.1rem;
+    margin-top: 1em;
+    font-weight:lighter;
+}
+.btn{
+    padding: 3em 0;
+}
+.btn-learn{
+    background-color: #38cfd9;
+    border: none;
+    outline: none;
+    padding:1em 2em;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-learn:hover{
+    cursor: pointer;
+    
+}
+.btn-learn:active{
+    border: 1px solid black;
 }

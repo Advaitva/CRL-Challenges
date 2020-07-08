@@ -1,0 +1,37 @@
+.l1-cont{
+    background-color: bisque;
+    width: 80%;
+    margin: auto;
+
+}
+h1{
+    text-align: center;
+}
+.l2-cont{
+    font-size:1.5em;
+    margin: auto 2em ;
+    text-align:center ;
+}
+.btn{
+    font-size: 1.5rem;
+    margin-top: 1.25em;
+    padding: 0.5em 2em;
+    background: black;
+    color: white;
+    outline: none;
+    border: none;
+    transition:background 0.5s ease;
+
+}
+.btn:hover{
+    color: black;
+    background: white;
+    cursor: pointer;
+}
+
+@media (min-width:700px){
+    .l2-cont{
+        font-size: 2rem;
+    }
+
+}
